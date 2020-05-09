@@ -6,15 +6,17 @@ import Error from './pages/Error'
 import Home from './pages/Home';
 import React from "react";
 import Rooms from './pages/Rooms';
-import SingleRoom from './pages/SingleRoom';
+import {Route} from "react-router-dom"
+import SingleRoom from './pages/SingleRoom'
 
 function App() {
   return (
     <>
-    <Home/>
-    <Rooms/>
-    <SingleRoom/>
-    <Error/>
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/rooms" component={Rooms}/>
+    <Route exact path="/single-room" component={SingleRoom}/>
+    
+    
     </>
     
   

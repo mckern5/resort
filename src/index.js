@@ -1,14 +1,21 @@
 import * as serviceWorker from './serviceWorker';
 
+import {
+  Link,
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
+
 //import './index.css';
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
