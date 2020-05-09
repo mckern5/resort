@@ -6,15 +6,15 @@ import Error from './pages/Error'
 //import logo from './logo.svg';
 //import './App.css';
 import Home from './pages/Home';
-import Navbar from './components/Navbar'
 import React from "react";
 import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom'
+import navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-    <Navbar/>
+    <navbar/>
     <Switch>
     <Route exact path="/" component={Home}/>
     <Route exact path="/rooms" component={Rooms}/>
