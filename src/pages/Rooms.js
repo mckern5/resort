@@ -1,9 +1,6 @@
+import Hero from '../components/Hero'
 import React from 'react'
 
 export default function Rooms() {
-    return (
-        <div>
-            hellow from rooms
-        </div>
-    )
+    return <Hero hero="roomsHero" />
 }
